@@ -1,0 +1,66 @@
+html {
+    background: linear-gradient(20deg,#753af8,#527afb,#25cffe) no-repeat;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container img {
+    margin-top: 2rem;
+    height: 7rem;
+    width: 6rem;
+    align-self: center;
+}
+
+.container h1 {
+    padding: 2rem;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.form {
+    width: 80%;
+    margin: auto;
+}
+
+span a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 961px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container img {
+        order: 2;
+        height: 17rem;
+        width: 16rem;
+        flex: .1;
+        margin-left: 5rem;
+        margin-top: 0;
+    }
+
+    .container h1 {
+        order: 1;
+        font-size: 3rem;
+        padding: 0;
+    }
+
+    .form {
+        order: 3;
+        width: 50%;
+    }
+}
